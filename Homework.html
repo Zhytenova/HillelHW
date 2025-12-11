@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Легка сторінка</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:2rem;background:#f7fbff;color:#0b2545}
+    .card{max-width:600px;margin:0 auto;padding:1.2rem;border-radius:12px;background:#fff;box-shadow:0 6px 18px rgba(11,37,69,0.06)}
+    h1{font-size:1.2rem;margin:0 0 .4rem}
+    p{margin:.4rem 0;font-size:0.95rem;line-height:1.4}
+    a.button{display:inline-block;margin-top:0.6rem;padding:.45rem .7rem;border-radius:8px;text-decoration:none;border:1px solid #cfe3ff;background:#eaf4ff;color:#033160}
+  </style>
+</head>
+<body>
+  <main class="card" role="main" aria-labelledby="title">
+    <h1 id="title">Мала безпечна HTML-сторінка</h1>
+    <p>Це проста, легка та безпечна HTML-сторінка для завантаження. Вона не містить зовнішніх скриптів або посилань на сторонні ресурси.</p>
+    <p>Приклад безпечного вмісту — заголовок, текст і кнопка, що відкриває невелике повідомлення (тільки на вашому комп’ютері).</p>
+    <p><a href="#" class="button" id="show">Показати повідомлення</a></p>
+    <p style="font-size:0.85rem;color:#445;">Створено для швидкого локального використання.</p>
+  </main>
+  <script>
+    document.getElementById('show').addEventListener('click', function(e){
+      e.preventDefault();
+      alert('Це локальне повідомлення. Файл безпечний і не відправляє дані кудись.');
+    });
+  </script>
+</body>
+</html>
