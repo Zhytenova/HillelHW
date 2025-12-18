@@ -1,38 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>contact</title>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    a.link {
+      display: inline-block;
+      margin-bottom: 10px;
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    a.link:hover {
+      text-decoration: underline;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-right: 10px;
+      border: 1px solid #333;
+      text-decoration: none;
+      color: #333;
+      background-color: #f0f0f0;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #ddd;
+    }
+  </style>
 </head>
+
 <body>
 
-<h1>Follow me</h1>
-<a href="https://www.linkedin.com/feed/" target="_blank">Linkedin</a>
+  <h1>Follow me</h1>
 
-<a href="https://www.instagram.com/zhytenova29?igsh=c2xzeXg4cTdnZmQy&utm_source=qr" target="_blank">Instagram</a>
+  <a class="link" href="https://www.linkedin.com/feed/" target="_blank">
+    LinkedIn
+  </a><br>
 
-<H3>Contacts:</H3>
-<p>Phone: +3759204933</p>
-<p>Email: Zhyteneva2004@gmail.com</p>
+  <a class="link" href="https://www.instagram.com/zhytenova29" target="_blank">
+    Instagram
+  </a>
 
-<a href="../index.html" class="btn">Main page</a>
+  <h3>Contacts</h3>
 
-<a href="gallery.html" class="btn">Gallery</a>
-<style>
-    .btn {
-        display: inline-block
-        padding: 10px 20px;
-        margin-right: 5px;
-        border: 1px solid black;
-        text-decoration: none;
-        color: black;
-        background-color: #f0f0f0;
+  <p>Phone: +3759204933</p>
+  <p>Email: zhyteneva2004@gmail.com</p>
 
-    }
-    .btn: hover {
-        background-color: #ddd;
-
-    }
-</style>
+  <div class="buttons">
+    <a href="../index.html" class="btn">Main page</a>
+    <a href="gallery.html" class="btn">Gallery</a>
+  </div>
 
 </body>
 </html>
